@@ -1,0 +1,273 @@
+/********************************FORSIDE******************************/
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ecf2f7;
+    background-repeat: no-repeat;
+}
+
+img {}
+
+header {
+    background-color: cadetblue;
+    position: static;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+header nav {
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 2vw;
+    text-align: center;
+}
+
+.overskrift {
+    text-align: center;
+    padding: 1px;
+}
+
+
+.overskrift2 {
+    text-align: center;
+    padding-top: 1px;
+    color: rgb(88, 89, 91);
+}
+
+
+.box {
+    background-color: aliceblue;
+    height: 1.5px;
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* unvisited link */
+header a:link {
+    color: white;
+    text-decoration: none;
+    margin: 1vw;
+}
+
+/* visited link */
+header a:visited {
+    color: #c7c7c7;
+}
+
+/* mouse over link */
+header a:hover {
+    color: grey;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0.5vw;
+}
+
+#splash {
+    margin: 5vw;
+    position: inherit;
+}
+
+/************************************CV************************************/
+
+
+.selvportraet img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.textommig {
+    text-align: center;
+    color: rgb(88, 89, 91);
+}
+
+p {
+    padding: 10px;
+    color: rgb(88, 89, 91);
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+li {
+    display: inline;
+    margin: 25px;
+}
+
+ul {
+
+    text-align: center;
+}
+
+.cvbilleder {
+    padding: 10px;
+}
+
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.responsive {
+    padding: 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+
+
+/************************************Portfolie*****************************/
+
+.tema {
+    text-decoration: none;
+    color: rgb(88, 89, 91);
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.tema a:hover {}
+
+
+.gallery1 img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+.responsive1 {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .responsive1 {
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive1 {
+        width: 100%;
+    }
+}
+
+
+/**********************************TEMA1***********************************/
+
+
+.temaoverskrift {
+    color: rgb(88, 89, 91);
+    text-align: center;
+    font-size: 1.2rem
+}
+
+.billede img {
+    flex-basis: 400px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.temalink a {
+    color: rgb(88, 89, 91);
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+}
+
+.temalink {
+    text-align: center;
+
+}
+
+
+
+
+/**********************************TEMA2***********************************/
+
+.tema2 h2 {
+    color: rgb(88, 89, 91);
+    padding: 10px;
+}
+
+
+.billede video {
+    flex-basis: 400px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**********************************TEMA3***********************************/
+
+.tema3 h2 {
+    color: rgb(88, 89, 91);
+    padding: 10px;
+}
+
+
+/**********************************TEMA4***********************************/
+
+
+.tema4 h2 {
+    color: rgb(88, 89, 91);
+    padding: 10px;
+}
