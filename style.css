@@ -4,7 +4,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #ecf2f7;
+    background-color: ;
     background-repeat: no-repeat;
 }
 
@@ -12,9 +12,7 @@ img {}
 
 header {
     background-color: cadetblue;
-    position: static;
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 0;
 }
@@ -25,15 +23,28 @@ header {
 
 
 header nav {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-decoration: none;
-    padding: 2vw;
-    text-align: center;
+    padding: 1px;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/*****
 .overskrift {
     text-align: center;
     padding: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+****/
+
+.overskrift1 {
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
 }
 
 
@@ -55,7 +66,7 @@ header nav {
 
 .box2 {
     background-color: rgb(88, 89, 91);
-    height: 0.7px;
+    height: 1px;
     width: 700px;
     display: block;
     margin-left: auto;
@@ -64,12 +75,30 @@ header nav {
 
 }
 
+nav li {
+    display: inline;
+    border-right: 1px solid white;
+    margin: auto;
+    padding: auto;
+
+}
+
+nav li a {
+    text-align: center;
+    padding: 5px 10px 10px 5px;
+}
+
+nav li:last-child {
+    border-right: none;
+
+}
+
 
 /* unvisited link */
 header a:link {
     color: white;
     text-decoration: none;
-    margin: 1vw;
+    margin: 1px;
 }
 
 /* visited link */
@@ -83,21 +112,45 @@ header a:hover {
     text-decoration: none;
     background-color: white;
     border-radius: 3px;
-    padding: 0.5vw;
+    padding: 10px;
 }
 
-a:hover {
+b a:hover {
     opacity: 1.0;
+    color: rgb(88, 89, 91);
 }
 
-a {
+b a {
     opacity: 0.5;
+    color: rgb(88, 89, 91);
+    text-decoration: none;
 }
 
 #splash {
     margin: 5vw;
     position: inherit;
 }
+
+
+@media screen and (min-width: 300px) {
+    nav li {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    nav li {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+
+    background-color: cadetblue;
+}
+
+
+
 
 /************************************CV************************************/
 
@@ -149,16 +202,14 @@ p {
 }
 
 
-
-
 li {
     display: inline;
-    margin: 25px;
+    margin: 20px;
 }
 
 ul {
-
     text-align: center;
+    padding-left: 0;
 }
 
 .cvbilleder {
@@ -198,6 +249,26 @@ ul {
 }
 
 
+@media screen and (min-width: 300px) {
+    .selvportraet img {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    .selvportraet img {
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+
 
 /************************************Portfolie*****************************/
 
@@ -225,6 +296,13 @@ ul {
 }
 
 
+.gallery1 a:hover {
+    opacity: 1.0;
+}
+
+.gallery1 a {
+    opacity: 0.5;
+}
 
 
 .responsive1 {
@@ -273,13 +351,30 @@ ul {
 }
 
 
-
 .temalink {
     text-align: center;
     padding: 10px;
-
 }
 
+
+@media screen and (min-width: 300px) {
+    .temalink img {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    .temalink img {
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
 
 
 
@@ -297,6 +392,25 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (min-width: 300px) {
+    .billede video {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    .billede video {
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
 }
 
 /**********************************TEMA3***********************************/
