@@ -44,7 +44,7 @@ header a:link {
 
 /* visited link */
 header a:visited {
-    color: #c7c7c7;
+    color: white;
 }
 
 /* mouse over link */
@@ -165,11 +165,11 @@ nav ul {
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
 
     .box,
     .box2 {
-        width: 600px;
+        width: 700px;
 
     }
 }
