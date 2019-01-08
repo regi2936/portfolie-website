@@ -146,14 +146,11 @@ nav ul {
 }
 
 b a:hover {
-    opacity: 1.0;
     color: rgb(88, 89, 91);
 }
 
 b a {
-    opacity: 0.5;
-    color: rgb(88, 89, 91);
-    text-decoration: none;
+    color: black;
 }
 
 
