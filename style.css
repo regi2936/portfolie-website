@@ -1,5 +1,12 @@
 /********************************FORSIDE******************************/
 
+#splash {
+    margin: 5vw;
+    position: inherit;
+}
+
+
+/***************FÆLLES****************/
 
 body {
     margin: 0;
@@ -8,7 +15,6 @@ body {
     background-repeat: no-repeat;
 }
 
-img {}
 
 header {
     background-color: cadetblue;
@@ -24,74 +30,10 @@ header {
 
 header nav {
     font-size: 1.5rem;
-    text-decoration: none;
     padding: 1px;
     font-family: 'Montserrat', sans-serif;
-}
-
-/*****
-.overskrift {
     text-align: center;
-    padding: 1px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 1.3rem;
 }
-****/
-
-.overskrift1 {
-    width: 350px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-}
-
-
-.overskrift2 {
-    text-align: center;
-    padding-top: 1px;
-    color: rgb(88, 89, 91);
-}
-
-
-.box {
-    background-color: aliceblue;
-    height: 1.5px;
-    width: 700px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.box2 {
-    background-color: rgb(88, 89, 91);
-    height: 1px;
-    width: 700px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-
-}
-
-nav li {
-    display: inline;
-    border-right: 1px solid white;
-    margin: auto;
-
-}
-
-nav li a {
-    text-align: center;
-    padding: 5px 10px 10px 5px;
-}
-
-nav li:last-child {
-    border-right: none;
-
-}
-
 
 /* unvisited link */
 header a:link {
@@ -114,20 +56,28 @@ header a:hover {
     padding: 5px;
 }
 
-b a:hover {
-    opacity: 1.0;
-    color: rgb(88, 89, 91);
-}
 
-b a {
-    opacity: 0.5;
-    color: rgb(88, 89, 91);
+nav li {
+    display: inline;
     text-decoration: none;
+    text-align: center;
+    border-right: 1.5px solid white;
+    padding: 0 0.4rem 0 0;
 }
 
-#splash {
-    margin: 5vw;
-    position: inherit;
+nav li a {
+    text-align: center;
+    padding: 5px 5px;
+}
+
+nav li:last-child {
+    border-right: none;
+
+}
+
+nav ul {
+    text-align: center;
+    padding-left: 0;
 }
 
 
@@ -160,6 +110,7 @@ b a {
     margin-top: 3px;
     line-height: 50px;
     border-radius: 3px;
+    padding-left: 25px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -167,6 +118,43 @@ b a {
 }
 
 
+.overskrift1 {
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.box {
+    background-color: white;
+    height: 1.5px;
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box2 {
+    background-color: rgb(88, 89, 91);
+    height: 1px;
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+b a:hover {
+    opacity: 1.0;
+    color: rgb(88, 89, 91);
+}
+
+b a {
+    opacity: 0.5;
+    color: rgb(88, 89, 91);
+    text-decoration: none;
+}
 
 
 /************************************CV************************************/
@@ -177,8 +165,6 @@ b a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-
 }
 
 .textommig {
@@ -220,12 +206,18 @@ p {
 }
 
 
-li {
+.ikon li {
     display: inline;
     margin: 20px;
+    opacity: 0.5;
 }
 
-ul {
+.ikon li:hover {
+    opacity: 1;
+}
+
+
+.ikon ul {
     text-align: center;
     padding-left: 0;
 }
@@ -239,10 +231,6 @@ ul {
     width: 100%;
     height: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-* {
-    box-sizing: border-box;
 }
 
 
@@ -297,31 +285,28 @@ ul {
 }
 
 
-
 .gallery1 img {
     width: 100%;
     height: auto;
     padding: 10px;
+    transition: transform .5s;
+    opacity: 0.5;
 
 }
+
+.gallery1 img:hover {
+    transform: scale(1.1);
+    opacity: 1.0;
+
+}
+
 
 .desc {
     padding: 15px;
     text-align: center;
     font-size: 1.5rem;
-}
+    color: rgb(88, 89, 91);
 
-
-.gallery1 a {
-    padding: 10px;
-    opacity: 0.5;
-    transition: transform .5s;
-
-}
-
-.gallery1 a:hover {
-    opacity: 1.0;
-    transform: scale(1.5);
 }
 
 
@@ -356,11 +341,11 @@ ul {
 }
 
 .billede img {
-    flex-basis: 400px;
     padding: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 
@@ -368,7 +353,6 @@ ul {
     color: rgb(88, 89, 91);
     text-decoration: none;
     font-size: 1.8rem;
-
 
 }
 
@@ -378,11 +362,16 @@ ul {
     padding: 10px;
     opacity: 0.5;
     transition: transform .5s;
+    margin: 0;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
 .temalink:hover {
-    text-align: center;
     padding: 10px;
     opacity: 1;
     transform: scale(1.1);
@@ -401,7 +390,7 @@ ul {
 
 @media screen and (min-width: 500px) {
     .temalink img {
-        width: 400px;
+        width: 300px;
         display: block;
         margin-left: auto;
         margin-right: auto
@@ -419,7 +408,6 @@ ul {
 
 
 .billede video {
-    flex-basis: 400px;
     padding: 10px;
     display: block;
     margin-left: auto;
