@@ -241,7 +241,6 @@ ul {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -314,11 +313,15 @@ ul {
 
 
 .gallery1 a {
+    padding: 10px;
     opacity: 0.5;
+    transition: transform .5s;
+
 }
 
 .gallery1 a:hover {
     opacity: 1.0;
+    transform: scale(1.5);
 }
 
 
@@ -366,12 +369,23 @@ ul {
     text-decoration: none;
     font-size: 1.8rem;
 
+
 }
 
 
 .temalink {
     text-align: center;
     padding: 10px;
+    opacity: 0.5;
+    transition: transform .5s;
+}
+
+
+.temalink:hover {
+    text-align: center;
+    padding: 10px;
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 
